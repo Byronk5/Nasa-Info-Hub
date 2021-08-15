@@ -1,0 +1,194 @@
+body {
+  overflow-x: hidden;
+}
+
+.header-image {
+  background: url("/img/mars_header.jpg") no-repeat center center/cover;
+  height: 40vh;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrap h1 {
+  margin-top: 1rem;
+}
+
+.content-wrap h2 {
+  margin-top: 3rem;
+}
+
+.insight-mars-lander {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  height: 80%;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-table {
+  margin-top: 2rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-table table {
+  border: 1px solid #333;
+  padding: 2rem;
+  width: 100%;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.rover-dropdown {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rover-dropdown select {
+  padding: 1rem;
+  width: 200px;
+  border: solid var(--nasa-blue) 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sol-input {
+  padding-top: 1rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sol-input input {
+  padding: 1rem;
+  border: solid var(--nasa-blue) 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.label {
+  font-weight: bold;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--nasa-red);
+}
+
+#submit,
+#reset {
+  margin-top: 1rem;
+}
+
+#reset {
+  margin-bottom: 2rem;
+}
+
+#submit:hover,
+#reset:hover {
+  background-color: var(--nasa-red);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-disabled {
+  text-decoration: line-through;
+  background-color: rgb(180, 180, 180);
+}
+
+.btn-disabled:hover {
+  background-color: rgb(180, 180, 180) !important;
+}
+
+#rover-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-content: center;
+}
+#rover-images img {
+  width: 400px;
+  height: 400px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1220px) {
+  #rover-images {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #rover-images {
+    grid-template-columns: auto;
+  }
+
+  #rover-images img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .weather-table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-image {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #rover-images img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .weather-table {
+    width: 100%;
+  }
+
+  th:nth-of-type(5),
+  th:nth-last-of-type(2) {
+    display: none;
+  }
+
+  .sol-1 td:nth-of-type(5),
+  td:nth-of-type(4) {
+    display: none;
+  }
+
+  .sol-2 td:nth-of-type(5),
+  td:nth-of-type(4) {
+    display: none;
+  }
+
+  .sol-3 td:nth-of-type(5),
+  td:nth-of-type(4) {
+    display: none;
+  }
+
+  .sol-4 td:nth-of-type(5),
+  td:nth-of-type(4) {
+    display: none;
+  }
+}

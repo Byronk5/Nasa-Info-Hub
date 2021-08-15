@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA API-Functional Programming</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="nasa-logo" class="text-center">
+      <img src="img/1200px-NASA_logo.svg.png" alt="nasa-logo" />
+    </div>
+    <nav>
+      <div class="nav-logo">
+        <a href="apod.html"
+          ><i class="fas fa-space-shuttle fa-2x"></i>
+          <h3>Nasa Info Hub</h3></a
+        >
+      </div>
+      <ul id="nav-links" class="mobile-links">
+        <li><a href="apod.html">Apod</a></li>
+        <li><a href="epic.html">Epic</a></li>
+        <li><a href="mars.html">Mars</a></li>
+        <li><a href="gallery.html" class="current-page">Gallery</a></li>
+        <li><a href="planets.html">Planets</a></li>
+      </ul>
+      <div id="mobile-menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center">Gallery</h1>
+      <div id="search" class="text-center">
+        <label for="search">Search Images</label>
+        <input type="text" id="search-input" />
+        <input type="submit" value="Submit" id="submit" class="btn" />
+        <input type="button" value="Reset" id="reset" class="btn" />
+      </div>
+    </div>
+    <div class="gallery-wrap">
+      <div id="gallery"></div>
+    </div>
+
+    <footer id="footer">
+      <div class="text-center">
+        <p>Website by Byron Meyer-2021</p>
+      </div>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

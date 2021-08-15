@@ -1,0 +1,54 @@
+body {
+  overflow-x: hidden;
+}
+
+.page-title {
+  margin-top: 2rem;
+}
+
+#date {
+  font-weight: bold;
+}
+
+#daily-title {
+  font-weight: bold;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+#daily-image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+#daily-image img {
+  width: 100%;
+  height: 80%;
+}
+
+#daily-content {
+  margin-bottom: 2rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    margin-top: 1rem;
+  }
+
+  #date {
+    margin-top: 10px;
+  }
+
+  #daily-title {
+    margin-top: 2rem;
+  }
+
+  #daily-image {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

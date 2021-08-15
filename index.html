@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login-wrap">
+        <div id="logo">
+          <img src="./img/1200px-NASA_logo.svg.png" alt="Logo" />
+        </div>
+        <div class="form-wrap">
+          <form id="login-form">
+            <input type="text" class="username" placeholder="Username" />
+            <input type="password" class="password" placeholder="Password" />
+            <input type="submit" value="Submit" class="submit" />
+          </form>
+        </div>
+        <div class="authenticate">
+          <div id="error" class="error"></div>
+          <div id="success" class="success"></div>
+        </div>
+      </div>
+    </div>
+    <div class="login-message">
+      <p class="fade">
+        Welcome to the NASA Info Hub, please login to continue...
+      </p>
+    </div>
+
+    <div class="position-wrap">
+      <div class="rocket-wrap">
+        <div class="countdown-box"><span id="countdown">3</span></div>
+        <div id="rocket-animation" class="rocket">
+          <img
+            src="img/searchpng.com-rocket-clipart-png-image-free-download.png"
+            alt=""
+          />
+        </div>
+        <div id="smoke-animation">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

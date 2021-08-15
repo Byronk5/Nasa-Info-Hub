@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/planets.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>SSC</title>
+  </head>
+  <body>
+    <div id="nasa-logo" class="text-center">
+      <img src="img/1200px-NASA_logo.svg.png" alt="nasa-logo" />
+    </div>
+    <nav>
+      <div class="nav-logo">
+        <a href="apod.html"
+          ><i class="fas fa-space-shuttle fa-2x"></i>
+          <h3>Nasa Info Hub</h3></a
+        >
+      </div>
+      <ul id="nav-links" class="mobile-links">
+        <li><a href="apod.html">Apod</a></li>
+        <li><a href="epic.html">Epic</a></li>
+        <li><a href="mars.html">Mars</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="planets.html" class="current-page">Planets</a></li>
+      </ul>
+      <div id="mobile-menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div id="container">
+      <h1 class="text-center">Planets</h1>
+      <p class="text-center">
+        Select a planet from the dropdown to view it's information
+      </p>
+      <div class="planet-select">
+        <select class="btn" name="Celestial Bodies" id="celestial-bodies">
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
+          <option value="sun">Sun</option>
+          <option value="mercury">Mercury</option>
+          <option value="venus">Venus</option>
+          <option value="mars">Mars</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="saturn">Saturn</option>
+          <option value="uranus">Uranus</option>
+          <option value="neptune">Neptune</option>
+        </select>
+        <input id="reset" class="btn" type="button" value="Reset" />
+      </div>
+    </div>
+
+    <div id="earth-info" class="text-center">
+      <h2>Earth</h2>
+      <img src="img/earth.png" alt="earth" />
+    </div>
+    <div id="distance" class="text-center">0kms</div>
+    <div id="body-info" class="text-center">
+      <div id="planet-name"></div>
+      <img id="body-image" src="img/moon.png" alt="celestial body" />
+      <div id="body-text"><ul id="body-list"></ul></div>
+    </div>
+    <footer id="footer">
+      <div class="text-center">
+        <p>Website by Byron Meyer-2021</p>
+      </div>
+    </footer>
+
+    <script src="js/planets.js"></script>
+  </body>
+</html>

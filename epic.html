@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/epic.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Earth Polychromatic Imaging Camera</title>
+  </head>
+  <body>
+    <div id="nasa-logo" class="text-center">
+      <img src="img/1200px-NASA_logo.svg.png" alt="nasa-logo" />
+    </div>
+    <nav>
+      <div class="nav-logo">
+        <a href="apod.html"
+          ><i class="fas fa-space-shuttle fa-2x"></i>
+          <h3>Nasa Info Hub</h3></a
+        >
+      </div>
+      <ul id="nav-links" class="mobile-links">
+        <li><a href="apod.html">Apod</a></li>
+        <li><a href="epic.html" class="current-page">Epic</a></li>
+        <li><a href="mars.html">Mars</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="planets.html">Planets</a></li>
+      </ul>
+      <div id="mobile-menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div class="header-image"></div>
+    <div class="container">
+      <div class="page-description text-center">
+        <h1>Earth Polychromatic Imaging Camera</h1>
+        <p>
+          The EPIC provides full disc imagery of the Earth and captures unique
+          perspectives of certain astronomical events such as lunar transits
+          using a 2048x2048 pixel CCD (Charge Coupled Device) detector coupled
+          to a 30-cm aperture Cassegrain telescope.
+          <b>
+            Select a date below to view an image of the earth on that specific
+            day. The first available date is 2015-08-31. <u>Note: today's earth
+            image may not be available immediately as it is dependant on the data
+            being sent from NASA<u></b
+          >
+        </p>
+      </div>
+      <div class="date-select">
+        <input type="date" id="date" />
+        <input type="submit" class="btn" value="Submit" id="submit" />
+      </div>
+      <div id="loading-image">
+        <img src="img/spinning_arrows.gif" alt="loading" id="loader" />
+      </div>
+      <div id="caption" class="text-center"></div>
+      <div id="earth-image"></div>
+    </div>
+    <footer id="footer">
+      <div class="text-center">
+        <p>Website by Byron Meyer-2021</p>
+      </div>
+    </footer>
+
+    <script src="js/epic.js"></script>
+  </body>
+</html>

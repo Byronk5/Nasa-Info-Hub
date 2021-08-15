@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mars.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Mars</title>
+  </head>
+  <body>
+    <div id="nasa-logo" class="text-center">
+      <img src="img/1200px-NASA_logo.svg.png" alt="nasa-logo" />
+    </div>
+    <nav>
+      <div class="nav-logo">
+        <a href="apod.html"
+          ><i class="fas fa-space-shuttle fa-2x"></i>
+          <h3>Nasa Info Hub</h3></a
+        >
+      </div>
+      <ul id="nav-links" class="mobile-links">
+        <li><a href="apod.html">Apod</a></li>
+        <li><a href="epic.html">Epic</a></li>
+        <li><a href="mars.html" class="current-page">Mars</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="planets.html">Planets</a></li>
+      </ul>
+      <div id="mobile-menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+
+    <div class="header-image"></div>
+
+    <div class="container">
+      <div class="content-wrap">
+        <h1 class="text-center">Mars Weather and Images</h1>
+        <h2>Insight: Mars Lander</h2>
+        <img
+          class="insight-mars-lander"
+          src="img/insight_mars_lander.jpg"
+          alt=""
+        />
+        <div class="weather-info">
+          <p class="text-center">
+            NASA’s InSight Mars lander takes continuous weather measurements
+            (temperature, wind, pressure) on the surface of Mars at Elysium
+            Planitia, a flat, smooth plain near Mars’ equator.
+          </p>
+          <div class="weather-table">
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Sol</th>
+                <th>Air Pre(Avg)</th>
+                <th>Air Pre(Min)</th>
+                <th>Air Pre(Max)</th>
+              </tr>
+              <tr class="sol-1 text-center"></tr>
+              <tr class="sol-2 text-center"></tr>
+              <tr class="sol-3 text-center"></tr>
+              <tr class="sol-4 text-center"></tr>
+            </table>
+          </div>
+        </div>
+        <h2>Images from Mars</h2>
+        <p>
+          Please select a rover and a martian sol (a martian day) to view the
+          images.
+        </p>
+        <div id="inputs">
+          <div class="rover-dropdown">
+            <label class="label text-center">Martian Rover:</label>
+            <select name="rovers" id="rovers">
+              <option value="curiosity">Curiosity</option>
+              <option value="opportunity">Opportunity</option>
+              <option value="spirit">Spirit</option>
+            </select>
+          </div>
+          <div class="sol-input">
+            <label class="label text-center" for="martian sol"
+              >Martian Sol:</label
+            >
+            <input
+              type="number"
+              name="sol"
+              id="sol-number"
+              min="0"
+              max="1000"
+            />
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="submit" id="submit" class="btn">Submit</button>
+          <button type="submit" id="reset" class="btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div id="rover-images"></div>
+
+    <footer id="footer">
+      <div class="text-center">
+        <p>Website by Byron Meyer-2021</p>
+      </div>
+    </footer>
+
+    <script src="js/mars.js"></script>
+  </body>
+</html>

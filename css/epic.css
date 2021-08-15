@@ -1,0 +1,120 @@
+body {
+  overflow-x: hidden;
+}
+
+.header-image {
+  background: url("/img/epic_header.jpg") no-repeat center top/cover;
+  height: 40vh;
+}
+
+.page-description {
+  margin-bottom: 3rem;
+}
+
+.page-description p {
+  padding-top: 1rem;
+}
+
+#image {
+  height: 500px;
+  width: 500px;
+}
+
+.date-select {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#date {
+  padding: 2rem;
+  border: solid var(--nasa-blue) 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#date:focus {
+  border-color: var(--nasa-red);
+}
+
+#submit {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#caption {
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+  font-weight: bold;
+}
+
+#earth-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+#earth-image img {
+  width: 80%;
+  height: 80%;
+  padding-bottom: 2rem;
+}
+
+/* Loader */
+
+#loading-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader {
+  visibility: hidden;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  animation: fadeIn ease-in-out 3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  #earth-image {
+    margin-bottom: 2rem;
+  }
+
+  #earth-image img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .header-image {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #earth-image img {
+    width: 60%;
+    height: 60%;
+  }
+}
