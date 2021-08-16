@@ -3,7 +3,7 @@ body {
 }
 
 .header-image {
-  background: url("/img/mars_header.jpg") no-repeat center center/cover;
+  background: url("../img/mars_header.jpg") no-repeat center center/cover;
   height: 40vh;
 }
 

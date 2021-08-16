@@ -3,7 +3,7 @@ body {
 }
 
 .header-image {
-  background: url("/img/epic_header.jpg") no-repeat center top/cover;
+  background: url("../img/epic_header.jpg") no-repeat center top/cover;
   height: 40vh;
 }
 
