@@ -3,6 +3,7 @@ const roverSelect = document.getElementById("rovers");
 const solNumber = document.getElementById("sol-number");
 const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
+const insightMessage = document.querySelector(".insight-message");
 
 async function getRoverImageData() {
   const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverSelect.value}/photos?sol=${solNumber.value}&api_key=DEMO_KEY`;
@@ -82,9 +83,22 @@ async function getWeatherData() {
 }
 
 getWeatherData().then((marsWeatherData) => {
-  console.log(marsWeatherData);
-  createWeatherTable(marsWeatherData);
+  insightData(marsWeatherData);
 });
+
+function insightData(marsWeatherData) {
+  console.log(marsWeatherData.sol_keys);
+  if ((marsWeatherData.sol_keys = [])) {
+    insightMessage.classList.add("insight-message-active");
+    setTimeout(removeInsightMessage, 8000);
+  } else {
+    createWeatherTable(marsWeatherData);
+  }
+}
+
+function removeInsightMessage() {
+  insightMessage.classList.remove("insight-message-active");
+}
 
 function createWeatherTable(marsWeatherData) {
   const sol_1 = document.querySelector(".sol-1");

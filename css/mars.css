@@ -7,6 +7,20 @@ body {
   height: 40vh;
 }
 
+.insight-message {
+  position: fixed;
+  background-color: var(--nasa-blue);
+  color: #fff;
+  width: 30%;
+  transform: translateX(-100%);
+  padding: 1rem;
+}
+
+.insight-message-active {
+  transition: transform 0.5s ease-in;
+  transform: translateX(1%);
+}
+
 .content-wrap {
   display: flex;
   flex-direction: column;
