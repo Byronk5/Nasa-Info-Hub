@@ -179,7 +179,9 @@ nav {
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
+    opacity: 0;
     transition: transform 0.5s ease-in;
+    transition: opacity 0.8s ease-in;
   }
 
   #mobile-menu {
@@ -190,6 +192,7 @@ nav {
 
   .mobile-menu-active {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 
