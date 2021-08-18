@@ -52,7 +52,7 @@ body {
   font-size: large;
   position: absolute;
   right: 10%;
-  bottom: 30%;
+  bottom: 15%;
 }
 
 .error {
@@ -90,7 +90,7 @@ body {
   height: 100px;
 }
 
-/* Animations */
+/* ANIMATIONS */
 
 /* ROCKET */
 
@@ -117,7 +117,6 @@ body {
 
 .smoke ul li {
   position: absolute;
-  /* list-style: none; */
   width: 80px;
   height: 80px;
   background: #333;
