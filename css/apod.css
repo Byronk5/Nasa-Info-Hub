@@ -51,4 +51,8 @@ body {
     margin-top: 1rem;
     width: 100%;
   }
+
+  #daily-content {
+    margin-bottom: 4rem;
+  }
 }
